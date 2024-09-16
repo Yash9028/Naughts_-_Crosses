@@ -1,4 +1,7 @@
-* {
+@import "utility";
+*,
+*::before,
+*::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -67,11 +70,13 @@ main {
   padding: 2rem;
 }
 .btn-reset {
+  cursor: pointer;
   background-color: whitesmoke;
   border: 1px solid #333;
   border-radius: 1rem;
   padding: 0.5rem 2rem;
 }
+
 .box{
     font-size: 4.5rem;
     font-weight: 250;
