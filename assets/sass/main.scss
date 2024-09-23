@@ -45,7 +45,7 @@ main {
   right: -2rem;
   font-weight: 500;
 }
-.Player-status {
+.player-status {
   border: 1px solid #333;
   background-color: #eee;
   border-radius: 1rem;
@@ -67,6 +67,7 @@ main {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   padding: 2rem;
 }
 .btn-reset {
@@ -78,11 +79,10 @@ main {
 }
 
 .box{
-    font-size: 4.5rem;
-    font-weight: 250;
     border: 1px solid #333;
     display: grid;
     place-items: center;
+    padding: 1rem;
 }
 
 @media screen and (max-width: 450px) {
