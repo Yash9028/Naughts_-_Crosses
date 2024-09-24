@@ -1,13 +1,14 @@
 @import "utility";
 *,
 *::before,
-*::after{
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
   font-family: "Teachers", sans-serif;
+  user-select: none;
 }
 button,
 input {
@@ -59,7 +60,8 @@ main {
   background-color: whitesmoke;
   width: 20rem;
   aspect-ratio: 1/1;
-  border-radius: 1rem;
+  border-radius: 30px;
+  font-size: 1rem;
 
   border-radius: 14px;
   background: #e0e0e0;
@@ -78,28 +80,30 @@ main {
   padding: 0.5rem 2rem;
 }
 
-.box{
-    border: 1px solid #333;
-    display: grid;
-    place-items: center;
-    padding: 1rem;
+.box {
+  border: 1px solid #333;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
-    .heading{
-        font-size: 1rem;
-        letter-spacing: 0;
-    }
-    .heading::after{
-        right: -1rem;
-    }
-    .heading::before{
-        left: -1rem;
-    }
-    .game-grid{
-        width: 15rem;
-    }
-    .box{
-        font-size: 2rem;
-    }
+  .heading {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+  .heading::after {
+    right: -1rem;
+  }
+  .heading::before {
+    left: -1rem;
+  }
+  .game-grid {
+    width: 15rem;
+  }
+  .box {
+    font-size: 2rem;
+  }
 }
